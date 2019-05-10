@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aernie <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aernie <aernie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 12:20:27 by aernie            #+#    #+#             */
-/*   Updated: 2019/04/04 18:09:24 by aernie           ###   ########.fr       */
+/*   Updated: 2019/05/10 19:29:21 by aernie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,7 @@ int		ft_putchar(char c);
 void	ft_is_negative(int n)
 {
 	if (n >= 0)
-	{
 		ft_putchar('P');
-	}
 	else
-	{
 		ft_putchar('N');
-	}
 }

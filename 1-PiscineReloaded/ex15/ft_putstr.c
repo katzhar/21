@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aernie <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aernie <aernie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 17:19:00 by aernie            #+#    #+#             */
-/*   Updated: 2019/04/04 22:45:19 by aernie           ###   ########.fr       */
+/*   Updated: 2019/05/10 19:30:44 by aernie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr(char *str)
 	int a;
 
 	a = 0;
-	while (str[a] != '\0')
+	while (str[a])
 	{
 		ft_putchar(str[a]);
 		a++;

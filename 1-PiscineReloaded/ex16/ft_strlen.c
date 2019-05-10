@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aernie <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aernie <aernie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 17:28:23 by aernie            #+#    #+#             */
-/*   Updated: 2019/04/04 22:44:48 by aernie           ###   ########.fr       */
+/*   Updated: 2019/05/10 19:31:17 by aernie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_strlen(char *str)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
-	while (str[i] != '\0')
-	{
+	while (str[i])
 		i++;
-	}
 	return (i);
 }
