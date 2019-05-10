@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aernie <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aernie <aernie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/17 17:20:32 by aernie            #+#    #+#             */
-/*   Updated: 2019/04/18 17:01:03 by aernie           ###   ########.fr       */
+/*   Updated: 2019/05/10 19:14:43 by aernie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
 	int		len;
-	size_t	i;
 	int		c;
+	size_t	i;
 	size_t	f;
 
 	if (s1 == s2)
@@ -25,8 +25,8 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 		return ((char*)s1);
 	while (*s1 && n)
 	{
-		i = 0;
 		c = 0;
+		i = 0;
 		f = n;
 		if (*s1 == s2[i])
 			while (s2[i] && s1[c++] == s2[i++] && f--)

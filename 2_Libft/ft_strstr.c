@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aernie <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aernie <aernie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/16 13:27:27 by aernie            #+#    #+#             */
-/*   Updated: 2019/04/17 14:18:15 by aernie           ###   ########.fr       */
+/*   Updated: 2019/05/10 19:16:43 by aernie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strstr(const char *s1, const char *s2)
 {
-	int		len;
-	int		i;
-	int		c;
+	size_t	len;
+	size_t	i;
+	size_t	c;
 
 	i = 0;
 	c = 0;

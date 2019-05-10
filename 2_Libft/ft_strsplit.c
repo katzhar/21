@@ -6,7 +6,7 @@
 /*   By: aernie <aernie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/28 21:58:56 by aernie            #+#    #+#             */
-/*   Updated: 2019/05/08 14:44:25 by aernie           ###   ########.fr       */
+/*   Updated: 2019/05/10 19:16:24 by aernie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static void	ft_free(char **dst)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (dst[i])
@@ -48,8 +48,8 @@ static	int	countwords(char const *s, char c)
 
 static char	**memalloc(char const *s, char c)
 {
-	int		j;
-	int		count;
+	size_t	j;
+	size_t	count;
 	char	**dst;
 
 	j = countwords(s, c);
@@ -77,11 +77,11 @@ static char	**memalloc(char const *s, char c)
 
 char		**ft_strsplit(char const *s, char c)
 {
-	int		i;
-	int		j;
-	int		n;
+	size_t	i;
+	size_t	j;
+	size_t	n;
+	size_t	words;
 	char	**dst;
-	int		words;
 
 	i = 0;
 	j = 0;

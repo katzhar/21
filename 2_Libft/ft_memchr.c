@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aernie <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aernie <aernie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/14 20:40:00 by aernie            #+#    #+#             */
-/*   Updated: 2019/04/14 20:41:39 by aernie           ###   ########.fr       */
+/*   Updated: 2019/05/10 19:09:29 by aernie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char		*s1;
 	unsigned char		c1;
-	int					i;
+	size_t				i;
 
 	i = 0;
 	s1 = (unsigned char*)s;
