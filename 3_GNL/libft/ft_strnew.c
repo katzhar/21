@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aernie <aernie@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aernie <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/07 11:51:38 by aernie            #+#    #+#             */
-/*   Updated: 2019/05/28 17:21:22 by aernie           ###   ########.fr       */
+/*   Created: 2019/04/23 20:55:45 by aernie            #+#    #+#             */
+/*   Updated: 2019/04/25 19:20:37 by aernie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-# include "libft/libft.h"
-# include <stdlib.h>
-# include <fcntl.h>
-# include <unistd.h>
+#include "libft.h"
 
-# define BUFF_SIZE 64
+char		*ft_strnew(size_t size)
+{
+	char	*n;
 
-int		get_next_line(int const fd, char **line);
-
-#endif
+	if (size + 1 == 0)
+		return (NULL);
+	n = (char *)malloc(sizeof(char) * (size + 1));
+	if (n == NULL)
+		return (NULL);
+	ft_memset(n, 0, size + 1);
+	return (n);
+}
