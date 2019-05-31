@@ -12,10 +12,10 @@
 
 #include "get_next_line.h"
 
-static int	verify_line(char **line, char **s, int fd)
+static int		verify_line(char **line, char **s, int fd)
 {
-	char	*tmp;
-	char	*str;
+	char		*tmp;
+	char		*str;
 	int		len;
 
 	str = ft_strchr(s[fd], '\n');
@@ -40,9 +40,9 @@ static int	verify_line(char **line, char **s, int fd)
 int			get_next_line(const	int fd, char **line)
 {
 	static	char	*s[10000];
-	char			*tmp;
-	char			buff[BUFF_SIZE + 1];
-	int				ret;
+	char		*tmp;
+	char		buff[BUFF_SIZE + 1];
+	int		ret;
 
 	if (fd < 0 || !line)
 		return (-1);
